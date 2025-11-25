@@ -2325,6 +2325,10 @@ To see the result, I used the GUI command:
 ```bash
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
 ```
+<img width="3978" height="1608" alt="Screenshot from 2025-11-15 23-19-55" src="https://github.com/user-attachments/assets/beefa3ef-2dbc-4981-9ab5-6a093ee9ea13" />
+
+- I have faced an error in macro placement in floorplan stage , basically the directory and file structure was not properly set, so i had restarted everything from start to fix this issue
+  
 <img width="2486" height="1562" alt="floorplan_gui" src="https://github.com/user-attachments/assets/70be718d-920e-4594-bc40-a873d7ada36f" />
 
 
@@ -2363,6 +2367,17 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk cts
 
 <img width="2486" height="1562" alt="cts2" src="https://github.com/user-attachments/assets/7f09a460-5f0a-4152-8ab3-2bc9fbd6d6aa" />
 
+- Setup and Hold violations
+
+<img width="2486" height="1562" alt="cts_Setup" src="https://github.com/user-attachments/assets/ce19bbab-c823-4b57-9642-c2bf70d2daf1" />
+
+<img width="2486" height="1562" alt="cts_hold" src="https://github.com/user-attachments/assets/5a0ef357-041b-4752-9aa7-a3f8d45925c9" />
+
+- Setup and Hold Slack
+
+<img width="2486" height="1562" alt="setup_slack" src="https://github.com/user-attachments/assets/36a1eef3-527b-4f54-9420-562696371ae3" />
+
+<img width="2486" height="1562" alt="hold_slack" src="https://github.com/user-attachments/assets/7294ca7e-d363-4deb-93d2-5bbc8c906124" />
 
 
 After this step, the tool runs a Static Timing Analysis (STA). and generates the following report
@@ -2896,6 +2911,8 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_route
 - After this i have faced a congestion error , basically after routing or during the place left for routing isnt enough or very less so that the routes , or tracks are too close each other causing DRC violations. 
 
 <img width="1438" height="231" alt="route_Error" src="https://github.com/user-attachments/assets/a559dea6-7149-4b4d-849f-39846827bb4a" />
+
+<img width="2486" height="1562" alt="Screenshot from 2025-11-19 19-22-31" src="https://github.com/user-attachments/assets/c9475a27-abe5-46ef-b7ce-c9d792e71b54" />
 
 ---
 
