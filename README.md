@@ -1,8 +1,5 @@
 # VSDBabySoC: RISC-V SoC Design & Tapeout
 
-![Status](https://img.shields.io/badge/status-active-success.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-
 ## 📑 Table of Contents
 - [Introduction to SoC](#introduction-to-soc)
 - [BabySoC Architecture](#babysoc-architecture)
