@@ -1,3 +1,27 @@
+# VSDBabySoC: RISC-V SoC Design & Tapeout
+
+![Status](https://img.shields.io/badge/status-active-success.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
+## 📑 Table of Contents
+- [Introduction to SoC](#introduction-to-soc)
+- [BabySoC Architecture](#babysoc-architecture)
+- [Project Structure](#project-structure)
+- [RTL to Synthesis Flow](#rtl-to-synthesis-flow)
+    - [TLV to Verilog](#tlv-to-verilog-conversion-for-rvmyth)
+    - [Pre-Synthesis Simulation](#pre-synthesis-simulation-flow)
+    - [Synthesis (Yosys)](#synthesis-flow)
+    - [Post-Synthesis Simulation](#post-synthesis-simulation-flow)
+- [Static Timing Analysis (STA)](#fundamentals-of-sta-static-timing-analysis)
+    - [OpenSTA Setup & Graphs](#timing-graphs-with-opensta)
+- [Physical Design (OpenROAD)](#physical-design-flow-openroad)
+    - [Setup & Configuration](#part-1-setting-up-the-environment-openroad)
+    - [Floorplan to Routing](#part-3-running-the-full-flow-the-fun-part)
+    - [Parasitic Extraction (SPEF)](#part-4-what-is-spef)
+- [Post-Route Signoff](#post-route-signoff)
+
+---
+
 # Understanding SoC Design Fundamentals and the BabySoC Learning Model
 
 This document outlines the fundamental concepts of System-on-Chip (SoC) design, explored as part of a RISC-V tapeout program. The focus is maintained on core architectural principles, the role of simplified models in education, and the importance of a structured design flow from functional modelling to physical implementation.
