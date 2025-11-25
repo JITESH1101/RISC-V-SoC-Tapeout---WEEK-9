@@ -2145,7 +2145,7 @@ The following are the pictures of Timing Analysis and Timing graphs of VSDBabySo
 
 ---
 
-## A Full Physical Design Flow
+# A Full Physical Design Flow
 
 Up to this point, many steps like synthesis, STA were separate exercises. The goal of this task was to integrate them into one continuous flow, just like in a real-world ASIC design process.
 
