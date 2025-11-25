@@ -3061,6 +3061,16 @@ After running the STA script, you can navigate to the `STA_OUTPUT/route/` direct
 
 
 
+# Conclusion
+
+With this RISC V Tapeout Program is completed.
+
+At the start of this program i was not that experienced with github documentation , but after 10 weeks of documentating all the tasks  , now i am confident that i can make good github repo documentations from now on.
+Before enrolling into this program , i never heard of Opensource EDA tools, but now i am confident that with all the knowledge i gained from this 10 week course i can develop a new design on my own using these tools and sky130A libraries and will make a very useful and impactful SoC tapeout for the growth of VLSI industry in India.
+
+Once again I am very grateful and happy that i have enrolled to this program
+
+Thankyou for support  @kunalg123 sir , you always helped me at that one crucial moment where i was stuck and tried to fix those errors for hours.
 
 
 
