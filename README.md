@@ -2318,11 +2318,14 @@ Here, the flow defines the die area, places the I/O pins, and positions our hard
 ```bash
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk floorplan
 ```
+<img width="2477" height="1330" alt="floorplan_log" src="https://github.com/user-attachments/assets/4e704257-45f1-4d7e-a3f3-6cc5d16d35ab" />
+
+
 To see the result, I used the GUI command:
 ```bash
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_floorplan
 ```
-<img width="1561" height="716" alt="floorplan" src="https://github.com/user-attachments/assets/616d3a67-5ac8-45f4-a986-8ce41ce88a79" />
+<img width="2486" height="1562" alt="floorplan_gui" src="https://github.com/user-attachments/assets/70be718d-920e-4594-bc40-a873d7ada36f" />
 
 
 ### 3. Placement
@@ -2330,24 +2333,36 @@ This step takes all the standard cells from the netlist and finds a legal, optim
 ```bash
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk place
 ```
+
+<img width="2486" height="1562" alt="placement_log" src="https://github.com/user-attachments/assets/647573db-36f4-4b8e-ace7-98e804192e3a" />
+
 And to view the placement heatmap (to check for congestion):
 ```bash
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk gui_place
 ```
-<img width="1501" height="716" alt="placement" src="https://github.com/user-attachments/assets/a178412a-a466-4bee-b4f8-26c83f6a7969" />
+
+<img width="2486" height="1562" alt="placement_gui" src="https://github.com/user-attachments/assets/8d672fdf-39d2-44e9-8a91-a4fc0a0582d5" />
+
 
 Now click on z to zoom into this to observe the heatmap
 
-<img width="1506" height="702" alt="heatmap" src="https://github.com/user-attachments/assets/ab09e827-f7ce-4dbb-89bf-224353e8e411" />
+<img width="2486" height="1562" alt="placement_heatmap" src="https://github.com/user-attachments/assets/bcd78417-1c2e-4874-a733-f54c65e53f9d" />
+
 
 
 ### 4. Clock Tree Synthesis (CTS)
 
 This is a critical step where the tool builds a balanced buffer tree to distribute the clock signal (`CLK`) to all the flip-flops with minimal skew.
+
 ```bash
 make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk cts
 ```
-<img width="1507" height="698" alt="cts" src="https://github.com/user-attachments/assets/04723964-aec5-4a10-8113-620731f1dfd6" />
+<img width="2486" height="1562" alt="cts_log" src="https://github.com/user-attachments/assets/569f2c6f-043c-4bcc-ba33-960deb18087b" />
+
+<img width="2486" height="1562" alt="cts_gui" src="https://github.com/user-attachments/assets/d0d84631-ae0b-4667-929b-9c35ecf3d70a" />
+
+<img width="2486" height="1562" alt="cts2" src="https://github.com/user-attachments/assets/7f09a460-5f0a-4152-8ab3-2bc9fbd6d6aa" />
+
 
 
 After this step, the tool runs a Static Timing Analysis (STA). and generates the following report
