@@ -2350,6 +2350,8 @@ make DESIGN_CONFIG=./designs/sky130hd/vsdbabysoc/config.mk cts
 
 After this step, the tool runs a Static Timing Analysis (STA). and generates the following report
 
+<details> <summary><strong>CTS_reports</strong></summary>
+
 ```
 ==========================================================================
 cts final report_tns
@@ -2855,7 +2857,7 @@ Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
 Total                  1.27e-02   8.25e-03   4.80e-08   2.10e-02 100.0%
                           60.7%      39.3%       0.0%
 ```
-
+</details>
 
 The reports showed **no setup or hold violations**, which is great!
 
