@@ -2143,16 +2143,9 @@ The following are the pictures of Timing Analysis and Timing graphs of VSDBabySo
 
 <img width="1190" height="590" alt="image" src="https://github.com/user-attachments/assets/4c0ab626-9e51-4b9f-801a-1fb6783feb02" />
 
+##  A Full Physical Design Flow
 
-# RISC-V-SoC-Tapeout---WEEK-7
-
- The main goal this week was to take a synthesized RISC-V SoC design, the `VsdBabySoC`, and run it through the entire physical design (PD) flow using the **OpenROAD-flow-scripts (ORFS)**.
-
-This task was all about connecting the dots—seeing how the digital logic we write in Verilog (`RTL`) gets translated into a physical, routable layout (`GDSII`) ready for fabrication. It's where the theory of chip design meets the practical reality of layout, timing, and parasitic extraction.
-
-##  The Objective: A Full Physical Design Flow
-
-Up to this point, many steps like synthesis, STA, and layout were separate exercises. The goal of this task was to integrate them into one continuous flow, just like in a real-world ASIC design process.
+Up to this point, many steps like synthesis, STA were separate exercises. The goal of this task was to integrate them into one continuous flow, just like in a real-world ASIC design process.
 
 My mission was to:
 1.  **Set up the Environment:** Install and configure the OpenROAD-flow-scripts.
